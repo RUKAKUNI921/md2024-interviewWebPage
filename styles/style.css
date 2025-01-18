@@ -1,0 +1,405 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Zen Kaku Gothic New", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.talk-container .talk-box p {
+  font-family: "Zen Kaku Gothic New", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.chapter-container .content-box p {
+  font-family: "Zen Maru Gothic", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.75;
+  letter-spacing: 0.05em;
+  background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)), linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+  background-size: 24px 24px;
+  background-repeat: repeat;
+  background-position: center center;
+}
+@media screen and (max-width: 450px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+.talk-space-box {
+  height: 200px;
+}
+@media screen and (max-width: 450px) {
+  .talk-space-box {
+    height: 75px;
+  }
+}
+
+.space-box {
+  height: 100px;
+}
+@media screen and (max-width: 450px) {
+  .space-box {
+    height: 50px;
+  }
+}
+
+.fixed-container .me-box {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-left: 70px;
+}
+.fixed-container .me-box #me {
+  width: 350px;
+  height: auto;
+}
+.fixed-container .teacher-box {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-right: 70px;
+}
+.fixed-container .teacher-box #tea {
+  width: 350px;
+  height: auto;
+}
+
+.sub-title-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.sub-title-container .sub-title-box {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sub-title-container .sub-title-box #sub-title {
+  width: 50%;
+}
+
+.me-hi-animation-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.me-hi-animation-container .me-hi-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.me-hi-animation-container .me-hi-box #me-hi {
+  width: 525px;
+  height: auto;
+}
+
+.title-animation-container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.title-animation-container .me-a-box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 250px;
+}
+.title-animation-container .me-a-box #me-a {
+  width: 350px;
+  height: auto;
+}
+.title-animation-container .animation-dialogue-box {
+  position: absolute;
+  width: 45%;
+  left: 550px;
+  bottom: 225px;
+}
+.title-animation-container .animation-dialogue-box .me-text {
+  text-align: left;
+  padding: 25px;
+  border: 2px solid black;
+  border-radius: 25px 25px 25px 0;
+}
+.title-animation-container .onshi-box {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.title-animation-container .onshi-box #onshi {
+  width: 500px;
+  height: auto;
+}
+.title-animation-container .tea-icon-a-box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.title-animation-container .tea-icon-a-box #tea-icon-a {
+  width: 350px;
+  height: auto;
+}
+
+.title-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.title-container .title-img-box {
+  width: 100%;
+}
+@media screen and (max-width: 450px) {
+  .title-container .title-img-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.intro-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.intro-container .tea-intro-box {
+  padding: 0 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 450px) {
+  .intro-container .tea-intro-box {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
+.intro-container .tea-intro-box .tea-text-box {
+  width: 525px;
+  height: auto;
+  margin-right: 50px;
+}
+@media screen and (max-width: 450px) {
+  .intro-container .tea-intro-box .tea-text-box {
+    order: 2;
+    width: 300px;
+    margin-top: 2em;
+    margin-right: 0;
+  }
+}
+.intro-container .tea-intro-box .tea-icon-box {
+  width: 350px;
+  height: auto;
+}
+@media screen and (max-width: 450px) {
+  .intro-container .tea-intro-box .tea-icon-box {
+    order: 1;
+    width: 150px;
+  }
+}
+.intro-container .me-intro-box {
+  margin-top: 100px;
+  padding: 0 120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 450px) {
+  .intro-container .me-intro-box {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
+.intro-container .me-intro-box .me-icon-box {
+  width: 350px;
+  height: auto;
+}
+@media screen and (max-width: 450px) {
+  .intro-container .me-intro-box .me-icon-box {
+    width: 150px;
+  }
+}
+.intro-container .me-intro-box .me-text-box {
+  width: 525px;
+  height: auto;
+  margin-left: 50px;
+}
+@media screen and (max-width: 450px) {
+  .intro-container .me-intro-box .me-text-box {
+    width: 300px;
+    margin-top: 2em;
+    margin-left: 0;
+  }
+}
+
+.chapter-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.chapter-container .content-box {
+  margin-left: 5%;
+  margin-right: auto;
+  text-align: left;
+}
+.chapter-container .content-box p {
+  font-size: 2em;
+}
+@media screen and (max-width: 450px) {
+  .chapter-container .content-box p {
+    font-size: 1.75em;
+  }
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container .content-box {
+  padding: 0 140px;
+}
+@media screen and (max-width: 450px) {
+  .container .content-box {
+    padding: 0 20px;
+  }
+}
+.container .content-box .dialogue-box {
+  width: 100%;
+}
+.container .content-box .dialogue-box .ask, .container .content-box .dialogue-box .speak {
+  text-align: left;
+  padding: 25px;
+}
+@media screen and (max-width: 450px) {
+  .container .content-box .dialogue-box .ask, .container .content-box .dialogue-box .speak {
+    padding: 10px;
+  }
+}
+.container .content-box .dialogue-box .ask {
+  width: 60%;
+  margin-right: auto;
+  margin-bottom: 5%;
+  border: 2px solid black;
+  border-radius: 25px 25px 25px 0;
+}
+@media screen and (max-width: 450px) {
+  .container .content-box .dialogue-box .ask {
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 0;
+  }
+}
+.container .content-box .dialogue-box .speak {
+  width: 80%;
+  margin-left: auto;
+  margin-bottom: 5%;
+  background-color: antiquewhite;
+  border-radius: 25px 25px 0 25px;
+}
+@media screen and (max-width: 450px) {
+  .container .content-box .dialogue-box .speak {
+    border-radius: 10px 10px 10px 0;
+  }
+}
+
+.art-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.art-container .art-box {
+  width: 100%;
+}
+@media screen and (max-width: 450px) {
+  .art-container .art-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.gif-container {
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+}
+@media screen and (max-width: 450px) {
+  .gif-container {
+    height: 50vh;
+  }
+}
+.gif-container .gif-box {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 450px) {
+  .gif-container .gif-box {
+    height: 50vh;
+  }
+}
+.gif-container .gif-box .static-image,
+.gif-container .gif-box .animation-gif {
+  width: 80%;
+  height: auto;
+  position: absolute;
+}
+@media screen and (max-width: 450px) {
+  .gif-container .gif-box .static-image,
+  .gif-container .gif-box .animation-gif {
+    width: 125%;
+  }
+}
+.gif-container .gif-box .animation-gif {
+  opacity: 0;
+}
+
+.talk-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.talk-container .talk-box {
+  padding: 2em 0;
+  text-align: center;
+}
+@media screen and (max-width: 450px) {
+  .talk-container .talk-box {
+    padding: 2em 2em;
+  }
+}
+.talk-container .talk-box p {
+  margin-top: 1em;
+  font-size: 1.5em;
+}
+@media screen and (max-width: 450px) {
+  .talk-container .talk-box p {
+    font-size: 1.25em;
+    margin-top: 0;
+  }
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer-container .footer-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-container .footer-box #footer-img {
+  width: 350px;
+}
+@media screen and (max-width: 450px) {
+  .footer-container .footer-box #footer-img {
+    width: 150px;
+  }
+}/*# sourceMappingURL=style.css.map */

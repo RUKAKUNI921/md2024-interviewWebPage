@@ -1,0 +1,98 @@
+$colors: (
+    main: red,
+    sub: blue,
+    accent: yellow,
+);
+
+@function color($color) {
+    @return #{map-get($colors, $color)}
+}
+
+$breakPoints: (
+    "pc": "1440px",
+    "sp": "450px",
+);
+
+@mixin mq($breakPoint) {
+    @media screen and (max-width: #{map-get($breakPoints, $breakPoint)}){
+        @content;
+    }
+}
+
+$maxWidth: 1200px;
+
+$svgWidth: 350px;
+
+$svgWidthSmall: 150px;
+
+$svgGoodSideMargin: 70px;
+
+$svgAnimationMargin: 250px;
+
+$animationDialogueLeft: $svgWidth + $svgAnimationMargin - 50px;
+
+$animationDialogueBottom: 225px;
+
+$textMarginBottom: 5%;
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+%zenkaku-reg {
+    font-family: "Zen Kaku Gothic New", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+%zenkaku-bold {
+    font-family: "Zen Kaku Gothic New", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+%zenmaru-reg {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+%zenmaru-bold {
+    font-family: "Zen Maru Gothic", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+
+body {
+    @extend %zenkaku-reg;
+    font-size: 18px;
+    line-height: 1.75;
+    letter-spacing: 0.05em;
+    background-image: linear-gradient(0deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px)),
+    linear-gradient(90deg, transparent calc(100% - 1px), #f0f0f0 calc(100% - 1px));
+    background-size: 24px 24px;
+    background-repeat: repeat;
+    background-position: center center;
+    @include mq(sp) {
+        font-size: 10px;
+    }
+}
+
+.talk-space-box {
+    height: 200px;
+    @include mq(sp) {
+        height: 75px;
+    }
+}
+
+.space-box {
+    height: 100px;
+    @include mq(sp) {
+        height: 50px;
+    }
+    // background-color: color(main);
+}
+  
