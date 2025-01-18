@@ -8,12 +8,12 @@ let meHi = document.getElementById("meHiAnimation");
 
 let titleAnimation = document.getElementById("titleAnimation");
 
-let fixed = document.getElementsByClassName("fixed-container");
+let fixedBox = document.getElementById("fixedBox");
 
 if (window.matchMedia("(max-width: 450px)").matches) {
     meHi.style.display = "none";
     titleAnimation.style.display = "none";
-    fixed.style.display = "none";
+    fixedBox.style.display = "none";
     
     gsap.to("#subTitleG", {
         scrollTrigger: {
