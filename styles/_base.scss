@@ -82,19 +82,16 @@ body {
 }
 
 .talk-space-box {
-    max-width: $maxWidth;
-    width: 100%;
+    box-sizing: border-box;
     height: 200px;
-    margin: 0 auto;
     @include mq(sp) {
         height: 75px;
     }
 }
 
 .space-box {
-    width: 0;
+    box-sizing: border-box;
     height: 100px;
-    margin: 0 auto;
     @include mq(sp) {
         height: 50px;
     }
