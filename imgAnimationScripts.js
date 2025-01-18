@@ -207,7 +207,7 @@ ScrollTrigger.create({
   // markers: "ture",
   onEnter: () => {
     gsap.to(staticImage3, { opacity: 0, duration: 0 });
-    animatedGif3.src = `images/art6ForAE.gif?${Date.now()}`;
+    animatedGif3.src = `images/art6forAE.gif?${Date.now()}`;
     gsap.to(animatedGif3, { opacity: 1, duration: 0 });
   },
   onLeaveBack: () => {
