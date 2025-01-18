@@ -38,7 +38,8 @@ $textMarginBottom: 5%;
 * {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    box-sizing: border-box;
+    // overflow-x: hidden;
 }
 
 %zenkaku-reg {
@@ -67,6 +68,9 @@ $textMarginBottom: 5%;
   
 
 body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     @extend %zenkaku-reg;
     font-size: 18px;
     line-height: 1.75;
@@ -82,19 +86,27 @@ body {
 }
 
 .talk-space-box {
-    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
     height: 200px;
+    box-sizing: border-box;
     @include mq(sp) {
         height: 75px;
     }
 }
 
 .space-box {
-    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
     height: 100px;
+    box-sizing: border-box;
     @include mq(sp) {
         height: 50px;
     }
     // background-color: color(main);
 }
+
+
   

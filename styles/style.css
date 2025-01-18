@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 body {
@@ -23,6 +23,9 @@ body {
 }
 
 body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
   font-size: 18px;
   line-height: 1.75;
   letter-spacing: 0.05em;
@@ -38,8 +41,11 @@ body {
 }
 
 .talk-space-box {
-  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   height: 200px;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 450px) {
   .talk-space-box {
@@ -48,8 +54,11 @@ body {
 }
 
 .space-box {
-  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   height: 100px;
+  box-sizing: border-box;
 }
 @media screen and (max-width: 450px) {
   .space-box {
@@ -333,7 +342,7 @@ body {
 }
 @media screen and (max-width: 450px) {
   .gif-container {
-    height: 50vh;
+    height: 30vh;
   }
 }
 .gif-container .gif-box {
@@ -345,7 +354,7 @@ body {
 }
 @media screen and (max-width: 450px) {
   .gif-container .gif-box {
-    height: 50vh;
+    height: 30vh;
   }
 }
 .gif-container .gif-box .static-image,
@@ -357,7 +366,7 @@ body {
 @media screen and (max-width: 450px) {
   .gif-container .gif-box .static-image,
   .gif-container .gif-box .animation-gif {
-    width: 125%;
+    width: 100%;
   }
 }
 .gif-container .gif-box .animation-gif {
