@@ -38,7 +38,10 @@ body {
 }
 
 .talk-space-box {
+  max-width: 1200px;
+  width: 100%;
   height: 200px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 450px) {
   .talk-space-box {
@@ -47,7 +50,10 @@ body {
 }
 
 .space-box {
+  max-width: 1200px;
+  width: 100%;
   height: 100px;
+  margin: 0 auto;
 }
 @media screen and (max-width: 450px) {
   .space-box {
