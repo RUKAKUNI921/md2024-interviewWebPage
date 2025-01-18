@@ -92,8 +92,7 @@ body {
 }
 
 .space-box {
-    max-width: $maxWidth;
-    width: 100%;
+    width: 0;
     height: 100px;
     margin: 0 auto;
     @include mq(sp) {
