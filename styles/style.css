@@ -359,7 +359,7 @@ body {
 }
 .gif-container .gif-box .static-image,
 .gif-container .gif-box .animation-gif {
-  width: 80%;
+  width: 100%;
   height: auto;
   position: absolute;
 }

@@ -7,6 +7,64 @@ if (window.matchMedia("(max-width: 450px)").matches) {
         autoAlpha: 0,
     });
 
+    gsap.set(["#meMouseOpen", "#teaMouseOpen"], {
+        opacity: 0,
+    });
+
+    gsap.timeline({repeat: -1, repeatDelay: 0.9})
+        .to("#meMouseOpen", {
+            duration: 0.1,
+            opacity: 1,
+            ease: "power4.out",
+        })
+        .to("#meMouseOpen", {
+            duration: 0.1,
+            opacity: 0,
+            ease: "power4.out",
+        })
+        .to("#meMouseOpen", {
+            duration: 0.1,
+            opacity: 1,
+            ease: "power4.out",
+        })
+        .to("#meMouseOpen", {
+            duration: 0.1,
+            opacity: 0,
+            ease: "power4.out",
+        })
+        .to("#meHead", {
+            transformOrigin: "bottom center",
+            keyframes: [{rotate: 8, duration: 0.2}, {rotate: 0, duration: 0.2}],
+        })
+    ;
+
+    gsap.timeline({repeat: -1, repeatDelay: 0.6})
+        .to("#teaMouseOpen", {
+            duration: 0.15,
+            opacity: 1,
+            ease: "power4.out",
+        })
+        .to("#teaMouseOpen", {
+            duration: 0.15,
+            opacity: 0,
+            ease: "power4.out",
+        })
+        .to("#teaMouseOpen", {
+            duration: 0.15,
+            opacity: 1,
+            ease: "power4.out",
+        })
+        .to("#teaMouseOpen", {
+            duration: 0.15,
+            opacity: 0,
+            ease: "power4.out",
+        })
+        .to("#tea-l-hand", {
+            keyframes: [{y: -35, duration: 0.25,}, {y: 0, duration: 0.25,}],
+        })
+    ;
+
+
     gsap.to(["#meG", "#teaG"], {
         scrollTrigger: {
             trigger: "#chapter1Start",

@@ -262,7 +262,7 @@
         }
         .static-image,
         .animation-gif {
-            width: 80%;
+            width: 100%;
             height: auto;
             position: absolute;
             @include mq(sp) {

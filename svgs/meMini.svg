@@ -1,0 +1,58 @@
+<svg id="me" data-name="me" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <defs>
+    <style>
+      .,me-mini-col-1 {
+        fill: #baff68;
+      }
+
+      .,me-mini-col-1, .,me-mini-col-2, .,me-mini-col-3, .,me-mini-col-4, .,me-mini-col-5 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .,me-mini-col-1, .,me-mini-col-2, .,me-mini-col-4, .,me-mini-col-5 {
+        stroke-width: 5px;
+      }
+
+      .,me-mini-col-6, .,me-mini-col-3, .,me-mini-col-5 {
+        fill: none;
+      }
+
+      .,me-mini-col-2, .,me-mini-col-4 {
+        fill: #fff;
+      }
+
+      .,me-mini-col-3 {
+        stroke-width: 8px;
+      }
+
+      .,me-mini-col-3, .,me-mini-col-4 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g id="meHead">
+    <g>
+      <path class=",me-mini-col-1" d="M308.13,262.38c-46.92,5.22-92.88,5.49-137.73.11-8.35-1-15.05-7.41-16.34-15.72-5.67-36.57-6.04-72.25-.19-106.91,1.36-8.07,7.9-14.27,16.01-15.39,46.26-6.36,92.51-6.38,138.77-.07,8.33,1.14,14.95,7.65,16.1,15.98,4.84,35.14,4.81,70.42.04,105.84-1.16,8.58-8.05,15.21-16.65,16.16Z"/>
+      <path class=",me-mini-col-2" d="M296.58,251.53c-39.09,4.35-77.37,4.58-114.73.09-6.95-.83-12.54-6.18-13.61-13.09-4.72-30.46-5.03-60.18-.16-89.05,1.14-6.73,6.58-11.89,13.33-12.82,38.53-5.3,77.06-5.31,115.58-.06,6.94.95,12.46,6.37,13.41,13.31,4.03,29.27,4.01,58.65.03,88.16-.96,7.14-6.7,12.67-13.87,13.46Z"/>
+      <line class=",me-mini-col-3" x1="217.73" y1="173.05" x2="217.73" y2="193.05"/>
+      <line class=",me-mini-col-3" x1="265.04" y1="173.05" x2="265.04" y2="193.05"/>
+    </g>
+    <line class=",me-mini-col-3" x1="220.45" y1="226.29" x2="262.66" y2="226.29"/>
+  </g>
+  <g id="meMouseOpen">
+    <ellipse class=",me-mini-col-4" cx="242.07" cy="226.29" rx="25.59" ry="7.56"/>
+  </g>
+  <g id="me-r-hand">
+    <circle class=",me-mini-col-5" cx="368.72" cy="347.91" r="15"/>
+  </g>
+  <g id="me-l-hand">
+    <circle class=",me-mini-col-5" cx="131.28" cy="347.91" r="15"/>
+  </g>
+  <g id="me-body">
+    <path class=",me-mini-col-1" d="M203.75,293.3c-20.26,14.49-32.74,35.71-37.45,63.65-2.06,12.22,7.33,23.37,19.72,23.37h114.34c12.65,0,20.09-14.15,12.99-24.62-23.59-34.77-47.94-58.69-73.32-67.7-12.18-4.32-25.76-2.22-36.27,5.3Z"/>
+  </g>
+  <g id="box">
+    <rect class=",me-mini-col-6" width="500" height="500"/>
+  </g>
+</svg>

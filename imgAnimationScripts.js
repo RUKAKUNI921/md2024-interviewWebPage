@@ -47,8 +47,9 @@ titleMoveTl
 const art1MoveTl = gsap.timeline({
     scrollTrigger: {
         trigger: "#art1Move",
-        start: "top center",
+        start: "center center",
         // toggleActions: "restart none none none",
+        pin: true,
     },
 });
 
@@ -118,7 +119,8 @@ art1MoveTl
 const art2MoveTl = gsap.timeline({
     scrollTrigger: {
         trigger: "#art2Move",
-        start: "top center",
+        start: "center center",
+        pin: true,
     },
 });
 
@@ -159,14 +161,22 @@ art2MoveTl
     
 ;
 
+const art3MoveTl = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#art3Move",
+        start: "center center",
+        pin: true,
+    },
+});
+
 let staticImage1 = document.querySelector(".static-image1");
 let animatedGif1 = document.querySelector(".animation-gif1");
 
 ScrollTrigger.create({
   trigger: "#gif1",
-  start: "top center",
-  end: "bottom center",
-  // markers: "ture",
+  start: "center center",
+  end: "bottom top",
+  pin: true,
   onEnter: () => {
     gsap.to(staticImage1, { opacity: 0, duration: 0 });
     animatedGif1.src = `images/art4ForAfterEffectsGIF.gif?${Date.now()}`;
@@ -183,9 +193,9 @@ let animatedGif2 = document.querySelector(".animation-gif2");
 
 ScrollTrigger.create({
   trigger: "#gif2",
-  start: "top center",
-  end: "bottom center",
-  // markers: "ture",
+  start: "center center",
+  end: "bottom top",
+  pin: true,
   onEnter: () => {
     gsap.to(staticImage2, { opacity: 0, duration: 0 });
     animatedGif2.src = `images/art5ForAE.gif?${Date.now()}`;
@@ -202,9 +212,9 @@ let animatedGif3 = document.querySelector(".animation-gif3");
 
 ScrollTrigger.create({
   trigger: "#gif3",
-  start: "top center",
-  end: "bottom center",
-  // markers: "ture",
+  start: "center center",
+  end: "bottom top",
+  pin: true,
   onEnter: () => {
     gsap.to(staticImage3, { opacity: 0, duration: 0 });
     animatedGif3.src = `images/art6forAE.gif?${Date.now()}`;
@@ -215,3 +225,47 @@ ScrollTrigger.create({
     gsap.to(animatedGif3, { opacity: 0, duration: 0 });
   },
 });
+
+const art7MoveTl = gsap.timeline({
+    scrollTrigger: {
+        trigger: "#art7Move",
+        start: "center center",
+        pin: true,
+    },
+});
+
+gsap.set(["#art7Hybrid", "#art7Shudan", "#art7Kobetu", "#art7Arrow"], {
+    opacity: 0,
+})
+
+art7MoveTl
+    .fromTo("#art7Shudan", {
+        x: -50,
+        y: 50,
+    }, {
+        duration: 0.4,
+        x: 0,
+        y: 0,
+        opacity: 1,
+    })
+    .fromTo("#art7Kobetu", {
+        x: 50,
+        y: -50,
+    }, {
+        duration: 0.4,
+        x: 0,
+        y: 0,
+        opacity: 1,
+    })
+    .to("#art7Arrow", {
+        duration: 0.2,
+        opacity: 1,
+    })
+    .fromTo("#art7Hybrid", {
+        scale: 0,
+    }, {
+        duration: 0.5,
+        scale: 1,
+        opacity: 1,
+    })
+;
